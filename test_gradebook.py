@@ -1,3 +1,4 @@
+import pytest
 from gradebook import letter_grade
 
 
@@ -8,7 +9,7 @@ def test_letter_grade_F():
     assert letter_grade(45) == "F"
 
 @pytest.mark.paramerize('score', 'excpecting', [(95, 'A'), (45, 'F')])
-def test_letter_grade(score, expected)
-    assert letter_grade(score) = expected
+def test_letter_grade(score, expected):
+    assert letter_grade(score) == expected
 
-    
+
