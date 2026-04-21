@@ -5,7 +5,7 @@ def letter_grade(score):
 def is_passing(score):
     pass
 
-def average(scoreList):
+def average(scores):
     pass
 
 def curved_score(score, bonus):
