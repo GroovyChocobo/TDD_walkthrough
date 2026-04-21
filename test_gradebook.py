@@ -6,3 +6,4 @@ def test_letter_grade_A():
 
 def test_letter_grade_F():
     assert letter_grade(45) == "F"
+
