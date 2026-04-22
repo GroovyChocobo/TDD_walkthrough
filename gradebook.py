@@ -1,6 +1,6 @@
 
 def letter_grade(score):
-    if not isInstance(score, (int, float)):
+    if not isinstance(score, (int, float)):
         raise TypeError("Score is an invalid type. ")
     if score >= 90:
         return "A"
