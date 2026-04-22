@@ -25,6 +25,6 @@ def test_is_passing_false():
 
 def test_is_passing_invaid_type():
     with pytest.raises(TypeError):
-    is_passing('passing')
+        is_passing('passing')
 
 
