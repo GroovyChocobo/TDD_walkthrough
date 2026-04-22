@@ -21,4 +21,4 @@ def test_is_passing_true(int, Boolean):
     assert is_passing(75) == True
 
 def test_is_passing_false(int, Boolean):
-    assert is_passing(75) == False
+    assert is_passing(45) == False
