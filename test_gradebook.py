@@ -27,4 +27,5 @@ def test_is_passing_invaid_type():
     with pytest.raises(TypeError):
         is_passing('passing')
 
-
+def test_average_works():
+    assert average(80, 90, 70) == 80.0
