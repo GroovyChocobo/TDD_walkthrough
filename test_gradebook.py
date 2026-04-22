@@ -1,6 +1,5 @@
 import pytest
-import is_passing
-from gradebook import letter_grade
+from gradebook import letter_grade, is_passing
 
 
 def test_letter_grade_A():
