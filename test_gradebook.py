@@ -48,4 +48,13 @@ def test_curved_score_basic():
 def test_curved_score_cap():
     assert curved_score(90, 15) == 100
 
+def test_curved_score_negative_bonus():
+    with pytest.raises(TypeError):
+        curved_score("negative bonus is not valid")
+
+def test_curved_score_zero():
+    with pytest.raises(TypeError):
+        curved_score("negative bonus needs to be high than zero")
+
+
 
