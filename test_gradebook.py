@@ -1,4 +1,5 @@
 import pytest
+import is_passing
 from gradebook import letter_grade
 
 
@@ -16,3 +17,6 @@ def test_letter_grade(score, expected):
 def test_letter_grade_invalid_type():
     with pytest.raises(TypeError):
         letter_grade('hello')
+
+def test_is_passing_true(int, Boolean):
+    assert is_passing(75) == True
