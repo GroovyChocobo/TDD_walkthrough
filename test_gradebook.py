@@ -20,4 +20,6 @@ def test_letter_grade_invalid_type():
 
 def test_is_passing_true(int, Boolean):
     assert is_passing(75) == True
-    return True
+
+def test_is_passing_false(int, Boolean):
+    assert is_passing(75) == False
