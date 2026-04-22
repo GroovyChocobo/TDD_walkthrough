@@ -1,5 +1,5 @@
 import pytest
-from gradebook import letter_grade, is_passing
+from gradebook import letter_grade, is_passing, average
 
 
 def test_letter_grade_A():
@@ -28,4 +28,8 @@ def test_is_passing_invaid_type():
         is_passing('passing')
 
 def test_average_works():
-    assert average(80, 90, 70) == 80.0
+    assert average([80, 90, 70]) == 80.0
+
+def test_average_empty_list():
+with pytest.raises(ValueError):
+average([])
