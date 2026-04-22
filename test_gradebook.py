@@ -8,13 +8,11 @@ def test_letter_grade_A():
 def test_letter_grade_F():
     assert letter_grade(45) == "F"
 
-@pytest.mark.parametrize("score, excpected", [(95, 'A'), (45, 'F')])
+@pytest.mark.parametrize("score, expected", [(95, "A"), (45, "F")])
 def test_letter_grade(score, expected):
     assert letter_grade(score) == expected
 
 
 def test_letter_grade_invalid_type():
-    with python.raises(TypeError):
+    with pytest.raises(TypeError):
         letter_grade('hello')
-
-
